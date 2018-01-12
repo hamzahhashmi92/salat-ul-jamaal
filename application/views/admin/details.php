@@ -124,6 +124,7 @@
                   <input type="button" class=" form-group btn btn-info col-md-2" id="edit-btn" value="Edit" style="margin-left:10px" >
                     <button type="Submit" id="edit-submit" class="btn btn-primary col-md-2" style="margin-left:10px; display:none;">Submit</button>
                     <input type="button" class=" form-group btn btn-success col-md-2" onclick="return completed(<?=$details->reservation_id?>)" id="completed-btn" value="Completed" style="margin-left:10px" > 
+                    <input type="button" class=" form-group btn btn-danger col-md-2" onclick="return delete_record(<?=$details->reservation_id?>)" id="delete-res-btn" value="Delete" style="margin-left:10px" >
                   </div>
                 </div>
               </div>

@@ -22,6 +22,20 @@ class Reservation_model extends CI_model
         return $data;
     }
 
+ function delete($id) {
+
+    $this->db->where( 'id',$id);
+    $this->db->delete(' reservations');
+    
+    }
+    
+
+
+
+
+
+
+
     function update($id,$data)
     {
          // var_dump($data);

@@ -56,6 +56,26 @@ class Reservations extends CI_Controller
       redirect(base_url()."reservations");
     }
 
+//   hh delete button function
+    function delete($id)
+    {
+        
+        $status = $this->reservation_model->delete($id);
+        if($status) 
+         $this->session->set_flashdata("status","This reservation has been deleted");
+         redirect(base_url()."reservations");
+
+
+    }
+
+
+
+
+
+
+
+
+
     function update($id){
 
       if(isset($_POST))

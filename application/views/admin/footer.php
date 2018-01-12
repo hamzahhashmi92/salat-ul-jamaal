@@ -106,6 +106,7 @@
        $("#edit-submit").show();
        $("#edit-btn").hide();
        $("#completed-btn").hide();
+       $("#delete-res-btn").hide();
   // alert( "Handler for .click() called." );
 });
    
