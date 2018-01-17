@@ -9,7 +9,8 @@
 	
 
 		<!-- GOOGLE FONTS : begin -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700%7cMontserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="<?=base_url()?>bower_components/font-awesome/css/font-awesome.min.css">
+		<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700%7cMontserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
 		<!-- GOOGLE FONTS : end -->
 
         <!-- STYLESHEETS : begin -->
@@ -133,7 +134,7 @@
 								<li>
 									<div class="item-inner">
 										<i class="ico fa fa-envelope-o"></i>
-										<a href="#">info@salatuljamal.com</a>
+										<a href="#">admin@salatuljamal.com</a>
 									</div>
 								</li>
 								<!-- EMAIL : end -->

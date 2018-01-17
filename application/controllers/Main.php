@@ -8,6 +8,7 @@ class Main extends CI_controller
 		parent::__construct();
         $this->load->library('session');
         $this->load->model("reservation_model");
+        $this->load->model("messages_model");
         $data['products']=$this->reservation_model->get_products();
     }
 
@@ -59,7 +60,7 @@ class Main extends CI_controller
     {
          if(!empty($_POST))
         {
-            $data['status']=$this->reservation_model->submit_msg($_POST);
+            $data['status']=$this->messages_model->submit_msg($_POST);
             if($data['status']==TRUE)
             {
                 $this->session->set_flashdata('submitted', 'Your message has been sent');    

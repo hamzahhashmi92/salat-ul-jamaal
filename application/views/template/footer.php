@@ -58,6 +58,7 @@
 		<script src="<?=base_url()?>assets/library/js/jquery.ba-outside-events.min.js" type="text/javascript"></script>
 		<script src="<?=base_url()?>assets/library/js/owl.carousel.min.js" type="text/javascript"></script><!-- Carousel -->
 		<script src="<?=base_url()?>assets/library/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		<script src="<?=base_url()?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- bootstrap time picker -->
 		<script src="<?=base_url()?>assets/library/js/library.js" type="text/javascript"></script>
 		<script src="<?=base_url()?>assets/library/js/scripts.js" type="text/javascript"></script>

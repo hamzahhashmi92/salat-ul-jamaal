@@ -7,8 +7,11 @@ class Reservations extends CI_Controller
 	{
          parent::__construct();	
 
-         if(!isset($_SESSION["username"]))
+         if(!($this->session->userdata("username")))
             redirect(base_url()."admin");
+         // var_dump();
+         // exit();
+
           $this->load->model("reservation_model");
 
 	}

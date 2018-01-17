@@ -7,8 +7,8 @@ class Messages extends CI_controller
 	{
          parent::__construct();	 
 
-        if(!isset($_SESSION["username"]))
-    	    redirect(base_url()."admin");
+        if(!($this->session->userdata("username")))
+            redirect(base_url()."admin");
 
          $this->load->model("messages_model");
 	}

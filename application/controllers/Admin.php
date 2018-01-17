@@ -19,7 +19,7 @@ class Admin extends CI_Controller
     
     $data["reservations"]=$this->reservation_model->count();
     $data["messages"]=$this->messages_model->count();
-    if(isset($_SESSION['username']))
+    if(($this->session->userdata("username")))
         {
             
              $this->load->view('admin/header');
@@ -30,9 +30,12 @@ class Admin extends CI_Controller
        else if(!empty($_POST))
         {
             if ($_POST["username"]=='admin' && $_POST['password']=='admin') {
-                $_SESSION['username']=$_POST["username"];
-                $_SESSION['password']=$_POST["password"];
-                
+                // $_SESSION['username']=$_POST["username"];
+                // $_SESSION['password']=$_POST["password"];
+                $this->session->set_userdata(array('username' => $_POST["username"],
+                                                    'password' => $_POST["password"]
+                                                  )
+                                            );
                 $this->load->view('admin/header');
                 $this->load->view('admin/aside');
                 $this->load->view('admin/dashboard',$data);
@@ -45,6 +48,7 @@ class Admin extends CI_Controller
             $this->load->view('login/login');
                     
     }
+
     function logout()
     {
         session_destroy();

@@ -78,7 +78,7 @@
 							<!-- ADDRESS SECTION : end -->
 
 							<!-- FORM SECTION : begin -->
-							<section>
+							 <section>
 
 								<h2>Send us a message</h2>
 
@@ -86,13 +86,13 @@
 									<div class="col-lg-8">
 
 										<!-- CONTACT FORM : begin -->
-										<form id="contact-form" class="default-form" action="<?=base_url()?>main/submit" method="post" >
+										 <form id="contact-form" class="default-form" action="<?=base_url()?>main/submit" method="post" >
 											<!-- FORM VALIDATION ERROR MESSAGE : begin -->
 											<p class="c-alert-message m-warning m-validation-error" style="display: none;"><i class="ico fa fa-exclamation-circle"></i>Please fill in all required (*) fields.</p>
 											<!-- FORM VALIDATION ERROR MESSAGE : end -->
 
 											<!-- SENDING REQUEST ERROR MESSAGE : begin -->
-											<!-- <p class="c-alert-message m-warning m-request-error" style="display: none;"><i class="ico fa fa-exclamation-circle"></i>There was a connection problem. Try again later.</p> -->
+											<p class="c-alert-message m-warning m-request-error" style="display: none;"><i class="ico fa fa-exclamation-circle"></i>There was a connection problem. Try again later.</p>
 											<!-- SENDING REQUEST ERROR MESSAGE : end -->
 
 											<div class="row">
@@ -165,7 +165,8 @@
 								</div>
 
 							</section>
-							<!-- FORM SECTION : end -->
+
+							<!-- SEction is hidden for Sessrion issue FORM SECTION : end -->
 
 						</div>
 					</div>
